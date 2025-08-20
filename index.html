@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectorial Home - Construimos la casa de tus sueños en la costa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F4; /* Un blanco arena muy sutil */
+        }
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2874&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .gallery-img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/56900000000" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 cta-button flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-10 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo Placeholder -->
+            <div class="text-white bg-black bg-opacity-20 backdrop-blur-sm p-3 rounded-lg">
+                <h1 class="text-2xl font-bold font-serif">Vectorial Home</h1>
+                <!-- <img src="placeholder_logo.png" alt="Logo Vectorial Home" class="h-10"> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative h-screen min-h-[600px] flex items-center text-white">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Transformamos tu terreno en el hogar que siempre imaginaste.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Construcción de casas boutique en el sector costero. Unimos diseño, naturaleza y tu estilo de vida.</p>
+            <a href="#consultoria" class="bg-[#8A9A5B] text-white font-bold py-3 px-8 rounded-lg text-lg cta-button">
+                ¿Tienes tu terreno? Agenda tu consultoría gratis.
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16 md:py-24">
+
+        <!-- About Section -->
+        <section class="text-center max-w-4xl mx-auto mb-16 md:mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#4A4A4A]">Más que una casa, una experiencia.</h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-12">
+                Vectorial Home es una constructora boutique con más de 22 años de experiencia que acompaña a las personas en un momento clave: transformar su terreno en la casa que siempre imaginaron. Nuestro enfoque no es solo “construir una casa”, sino guiar a cada familia en todo el proceso: desde el diseño y permisos, hasta la ejecución y entrega final.
+            </p>
+            
+            <!-- Video Section -->
+            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                    <!-- YouTube Video Placeholder -->
+                     <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=i7g_5M-rS5T7R_9G" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
+                        class="w-full h-full"
+                        ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features/Process Section -->
+        <section class="grid md:grid-cols-3 gap-8 md:gap-12 text-center mb-16 md:mb-24">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="mb-4 inline-block p-4 bg-[#EAEFE3] rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-[#4A4A4A]">Diseño y Planificación</h3>
+                <p class="text-gray-600">Creamos viviendas únicas, personalizadas y alineadas con el entorno y tu estilo de vida.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="mb-4 inline-block p-4 bg-[#EAEFE3] rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-[#4A4A4A]">Gestión y Permisos</h3>
+                <p class="text-gray-600">Nos encargamos de toda la burocracia para que tú solo te preocupes de disfrutar el proceso.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <div class="mb-4 inline-block p-4 bg-[#EAEFE3] rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-[#4A4A4A]">Construcción y Entrega</h3>
+                <p class="text-gray-600">Ejecución de alta calidad con la tranquilidad de que tu proyecto está en manos expertas.</p>
+            </div>
+        </section>
+
+        <!-- Projects Gallery Section -->
+        <section class="mb-16 md:mb-24">
+            <div class="text-center max-w-4xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#4A4A4A]">Nuestros Proyectos</h2>
+                <p class="text-lg text-gray-600">Casas que reflejan la personalidad de sus dueños y la belleza del entorno costero.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Image 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 gallery-img">
+                    <img src="https://placehold.co/600x400/EAEFE3/4A4A4A?text=Proyecto+Maitencillo" alt="Casa en Maitencillo" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#4A4A4A]">Casa Maitencillo</h3>
+                        <p class="text-gray-600 mt-2">Diseño integrado con vistas panorámicas al mar.</p>
+                    </div>
+                </div>
+                <!-- Project Image 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 gallery-img">
+                    <img src="https://placehold.co/600x400/F8F7F4/4A4A4A?text=Proyecto+Marbella" alt="Casa en Marbella" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#4A4A4A]">Residencia Marbella</h3>
+                        <p class="text-gray-600 mt-2">Lujo y tranquilidad en un entorno natural privilegiado.</p>
+                    </div>
+                </div>
+                <!-- Project Image 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 gallery-img">
+                    <img src="https://placehold.co/600x400/8A9A5B/FFFFFF?text=Proyecto+Zapallar" alt="Casa en Zapallar" class="w-full h-64 object-cover">
+                     <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#4A4A4A]">Casa Zapallar</h3>
+                        <p class="text-gray-600 mt-2">Conexión directa con la naturaleza y materiales nobles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="consultoria" class="bg-[#8A9A5B] text-white text-center py-16 px-6 rounded-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para dar el siguiente paso?</h2>
+            <p class="text-lg max-w-2xl mx-auto mb-8">Si ya tienes tu terreno, estás a un paso de comenzar. Conversemos sobre tu proyecto.</p>
+            <a href="#" class="bg-white text-[#4A4A4A] font-bold py-3 px-8 rounded-lg text-lg cta-button">
+                Agendar mi consultoría gratis
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2024 Vectorial Home. Todos los derechos reservados.</p>
+            <p class="mt-2">Diseño y construcción con pasión por la naturaleza.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
