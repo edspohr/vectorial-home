@@ -6,12 +6,14 @@
     <title>Vectorial Home - Construimos tu sueño en la costa</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Tailwind CSS v3 (Stable) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Librería para animaciones en scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -60,7 +62,7 @@
             border-radius: 50px;
             text-align: center;
             box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
-            z-index: 1000; /* Aumentado para asegurar visibilidad */
+            z-index: 1000;
             transition: transform 0.3s ease;
             display: flex;
             align-items: center;
@@ -69,8 +71,6 @@
         .whatsapp-float:hover {
             transform: scale(1.1);
         }
-
-        /* Ocultar animaciones en dispositivos que prefieren movimiento reducido */
         @media (prefers-reduced-motion: reduce) {
             [data-aos] {
                 transform: none !important;
@@ -320,3 +320,4 @@
     </script>
 </body>
 </html>
+
